@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio de Introducción a HTML en OpenBootcamp</title>
+    <title>Ejercicio 02 - Formularios en HTML</title>
 
 </head>
-
-
 <body>
-<!-- Este es mi primer comentario de dos líneas
-     Aprendiendo a documentar mi código con OpenBootcamp -->
-    <ul>
-        <li>
-            <a href="https://www.youtube.com/watch?v=YvgtfdG6KKI&ab_channel=ORIGINALGORDOBRUNO">GORDO BRUNO & NICO VERA - INTERMINABLE IDÍLIO (DISCO COMPLETO)git</a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=TalBhLEsJI8&t&ab_channel=ORIGINALGORDOBRUNO">GORDO BRUNO & NICO VERA - LÍNEAS DE PODER (DISCO COMPLETO)</a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=hA0qMlCImz0&t&ab_channel=ORIGINALGORDOBRUNO">GORDO BRUNO - CÓMO HABLAR CORRECTAMENTE EN PÚBLICO (DISCO COMPLETO)</a>
-        </li>
-    </ul>
-
+    <form action="/" method="GET">
+        <div>
+            <label for="Nombre">Nombre</label>
+            <input id="Nombre" type="text" name="Nombre">
+        </div>
+        <div>
+            <label for="Edad">Edad</label>
+            <input id="Edad" type="number" name="Edad" min="0" max="120">
+        </div>
+        <div>
+            <label for="Frase-favorita">Frase favorita</label>
+            <textarea id="Frase-favorita" name="Frase-favorita">Frase favorita</textarea>
+        </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
 </body>
 </html>
